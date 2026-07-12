@@ -75,7 +75,7 @@ function update() {
   const diff = target - new Date()
   if (diff <= 0) return
   countdown.value = [
-    { label: 'Dni',    value: pad(Math.floor(diff / 86400000), 3) },
+    { label: 'Dni',    value: pad(Math.floor(diff / 86400000)) },
     { label: 'Godzin', value: pad(Math.floor((diff % 86400000) / 3600000)) },
     { label: 'Minut',  value: pad(Math.floor((diff % 3600000) / 60000)) },
     { label: 'Sekund', value: pad(Math.floor((diff % 60000) / 1000)) },

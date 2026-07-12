@@ -1,4 +1,3 @@
- <!-- url('https://unsplash.com/photos/couple-wearing-silver-colored-rings-RHAtRIT3-CE');" -->
 <template>
   <section
     id="home"
@@ -49,7 +48,18 @@
             <path d="M34 27 Q37 34 39 41" fill="none" stroke="#C8887A" stroke-width="1.3" stroke-linecap="round"/>
           </svg>
         </div>
-
+        <img
+          :src="heroPhoto"
+          alt="Ewelina i Krystian"
+          class="mx-auto mb-8"
+          style="
+            width: 100%;
+            max-width: 500px;
+            aspect-ratio: 4 / 5;
+            object-fit: cover;
+            border-radius: 250px 250px 1rem 1rem;
+          "
+        />
         <!-- Names in Nunito — matching the invitation's rounded serif look -->
         <h1
           class="font-main text-ink leading-tight mb-0"
@@ -100,6 +110,7 @@
 </template>
 
 <script setup>
+import heroPhoto from '/source/assets/couple.jpg';
 function scrollTo(id) { document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' }) }
 </script>
 
