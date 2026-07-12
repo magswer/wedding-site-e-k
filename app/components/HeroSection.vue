@@ -88,7 +88,7 @@
         <div class="flex items-center justify-center gap-3 my-5">
           <div style="width: 36px; height: 1px; background: #C8D4BE;"></div>
           <span class="font-main text-[11px] font-normal tracking-[0.2em] uppercase text-ink-light">
-            7 Sierpnia 2026 · Stare Polaszki
+            7 Sierpnia 2026, Stare&nbsp;Polaszki
           </span>
           <div style="width: 36px; height: 1px; background: #C8D4BE;"></div>
         </div>
