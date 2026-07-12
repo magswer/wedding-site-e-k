@@ -98,21 +98,27 @@
               :class="event.highlight ? 'text-salmon-dark' : 'text-ink'"
               style="font-size: 1rem; font-weight: 400;">{{ event.title }}</h3>
             <p class="font-main font-light text-sm text-ink-mid leading-relaxed">{{ event.desc }}</p>
-          </div>
         </div>
       </div>
+    </div>
     </div>
   </section>
 </template>
 
 <script setup>
 const events = [
-  { time: '16:00', title: 'Przybycie gości',   desc: 'Prosimy o przybycie 30 minut przed ceremonią. Obsługa przeprowadzi Państwa na miejsca.',       highlight: false },
-  { time: '17:00', title: 'Ceremonia ślubna',  desc: 'Uroczystość zawarcia związku małżeńskiego. Prosimy o wyłączenie telefonów podczas ceremonii.',   highlight: true  },
-  { time: '17:45', title: 'Koktajl powitalny', desc: 'Szampan, wino i przekąski. Świętujmy razem ten wyjątkowy moment!',                              highlight: false },
-  { time: '19:00', title: 'Uroczysta kolacja', desc: 'Przyjęcie weselne z wielodaniową kolacją, toastami i życzeniami dla Młodej Pary.',               highlight: false },
-  { time: '20:30', title: 'Pierwszy taniec',   desc: 'Wyczekiwana chwila — pierwszy taniec Eweliny i Krystiana.',                                     highlight: true  },
-  { time: '21:00', title: 'Zabawa weselna',    desc: 'Tańce, muzyka i świętowanie do białego rana!',                                                  highlight: false },
-  { time: '00:00', title: 'Oczepiny & tort',   desc: 'Tradycyjne oczepiny, tort weselny i niezapomniane wspomnienia.',                                highlight: false },
+  { time: '17:00', title: 'Ceremonia ślubna',  desc: 'Prosimy o przybycie kilka minut wcześniej, abyśmy mogli wspólnie rozpocząć ten ważny dla nas moment.',       highlight: true },
+  { time: '17:20', title: 'Garden party',      desc: 'Prosseco, przekąski i muzyka. Rozpoczynamy świętowanie!',                                                    highlight: false },
+  { time: '19:00', title: 'Obiad',             desc: '',                                                                                                           highlight: false },
+  { time: '19:45', title: 'Pierwszy taniec',   desc: 'Do zobaczenia na parkiecie!',                                                                                highlight: false },
+  { time: '21:30', title: 'Kolacja & tort',    desc: '',                                                                                                           highlight: false },
+  { time: '23:30', title: 'Oczepiny',          desc: 'Zapraszamy do wspólnej zabawy!',                                                                             highlight: false },
+  { time: '00:30', title: 'Kolacja II',        desc: '',                                                                                                           highlight: false },
+  { time: '02:00', title: 'Kolacja III',       desc: 'Ostatni ciepły posiłek regeneracyjny',                                                                       highlight: false },
+  { time: '', title: '',       desc: '',                                                                                                                           highlight: false },
+  { time: '', title: 'W sobotę o godz. 15:00 rozpoczynamy drugi dzień wesela',                                                                                     highlight: true },
+
+
+
 ]
 </script>
