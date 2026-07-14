@@ -64,7 +64,7 @@
             </ul>
 
             <a
-              :href="`https://${uploadUrl}`"
+              :href="`https://drive.google.com/drive/folders/1fYZkrUtGJAbS20mKZ8StxELKHYeWRcyI?usp=sharing`"
               target="_blank"
               rel="noopener"
               class="inline-flex items-center gap-2 font-main text-[11px] font-normal tracking-wide border-b pb-0.5 transition-colors duration-200"
@@ -103,7 +103,7 @@
                 </svg>
               </div>
 
-              <p class="font-main text-ink mb-5" style="font-size: 0.95rem; font-weight: 400;">Galeria weselna</p>
+              <p class="font-main text-ink mb-5" style="font-size: 0.95rem; font-weight: 400;">Dodaj zdjęcia</p>
 
               <div class="relative inline-block mb-4">
                 <img
@@ -122,7 +122,17 @@
 
               <div class="flex items-center gap-2 my-4">
                 <div class="flex-1 h-px" style="background:#F2EBE3;"></div>
-                <span class="font-main text-[9px] font-normal tracking-[0.2em] uppercase" style="color:#9C8878;">Zeskanuj mnie</span>
+                  <span class="font-main text-[9px] font-normal tracking-[0.2em] uppercase" style="color:#9C8878;">
+    Zeskanuj&nbsp;mnie lub otwórz&nbsp;
+    <a
+      href="https://pixbearer.com/event/4e39381a-7f2c-452e-a244-35f56f660169"
+      target="_blank"
+      rel="noopener noreferrer"
+      style="color:#9C8878; text-decoration: underline;"
+    >
+      link
+    </a>
+                  </span>
                 <div class="flex-1 h-px" style="background:#F2EBE3;"></div>
               </div>
             </div>
@@ -140,7 +150,7 @@ const qrSrc = computed(() => {
   return `https://api.qrserver.com/v1/create-qr-code/?size=196x196&data=${encoded}&color=4A5840&bgcolor=FFFFFF&margin=8&format=png&ecc=M`
 })
 const steps = [
-  'Zeskanuj kod QR telefonem',
+  'Zeskanuj kod QR telefonem lub otwórz link',
   'Prześlij swoje zdjęcia i filmy',
   'Ciesz się wspólną galerią!',
 ]
